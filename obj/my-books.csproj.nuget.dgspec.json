@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\akank\\Desktop\\Interview preparation\\my-books\\my-books.csproj": {}
+    "C:\\Users\\akank\\Desktop\\Interview preparation\\dotnetPractice\\mybook\\my-books.csproj": {}
   },
   "projects": {
-    "C:\\Users\\akank\\Desktop\\Interview preparation\\my-books\\my-books.csproj": {
+    "C:\\Users\\akank\\Desktop\\Interview preparation\\dotnetPractice\\mybook\\my-books.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\akank\\Desktop\\Interview preparation\\my-books\\my-books.csproj",
+        "projectUniqueName": "C:\\Users\\akank\\Desktop\\Interview preparation\\dotnetPractice\\mybook\\my-books.csproj",
         "projectName": "my-books",
-        "projectPath": "C:\\Users\\akank\\Desktop\\Interview preparation\\my-books\\my-books.csproj",
+        "projectPath": "C:\\Users\\akank\\Desktop\\Interview preparation\\dotnetPractice\\mybook\\my-books.csproj",
         "packagesPath": "C:\\Users\\akank\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\akank\\Desktop\\Interview preparation\\my-books\\obj\\",
+        "outputPath": "C:\\Users\\akank\\Desktop\\Interview preparation\\dotnetPractice\\mybook\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\akank\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,20 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.20, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.20, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
