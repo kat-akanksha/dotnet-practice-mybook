@@ -1,6 +1,7 @@
 
 using Microsoft.EntityFrameworkCore;
 using my_books.Data;
+using my_books.Data.Services;
 
 namespace my_books
 {
@@ -17,9 +18,12 @@ namespace my_books
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            //db server configuration
+            //configure Db context with SQL
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnectionString");
             builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
+
+            //Configure the services
+            builder.Services.AddTransient<BookService>();
 
             var app = builder.Build();
 
@@ -37,7 +41,10 @@ namespace my_books
 
             app.MapControllers();
 
+            AppDbInitializer.Seed(app);
+
             app.Run();
+
         }
     }
 }
